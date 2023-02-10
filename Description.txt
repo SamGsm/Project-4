@@ -1,0 +1,53 @@
+Данные имеют следующую структуру:
+- записываются для каждого пользователя, совершившего покупки, каждый день
+- для каждой даты есть своя папка, внутри неё – папки для каждого пользователя
+- внутри каждой папки есть файл data.csv, где и хранятся данные
+
+Схематично выглядит так:
+
+└── data
+   ├── 2020-12-30
+      │  ├── FirstName_LastName1
+         │  │   └── data.csv
+            │  ├── FirstName_LastName2
+               │  │   └── data.csv
+                  │  └── FirstName_LastName3
+                     │      └── data.csv
+                        └── 2020-12-31
+                              ├── FirstName_LastName1
+                                    │   └── data.csv
+                                          └── FirstName_LastName5
+                                                    └── data.csv
+
+Например, 30 декабря три покупателя сделали покупки, 31 – два (папки 2020-12-30 и 2020-12-31 соответственно). Поскольку клиент FirstName_LastName1 купил товары в оба дня, для него имеется папка в папке для каждой из дат. Для других клиентов – по одной.
+Note: данные в задании покрывают другой временной период, имена тоже другие.
+
+
+____________________________________________________________________________________________________________________
+
+
+
+
+The data has the following structure:
+- are recorded for each user who made purchases, every day
+- each date has its own folder, inside it there are folders for each user
+- inside each folder there is a data.csv file, where the data is stored
+
+Schematically it looks like this:
+
+└── data
+    ├── 2020-12-30
+       │ ├── FirstName_LastName1
+          │ │ └── data.csv
+             │ ├── FirstName_LastName2
+                │ │ └── data.csv
+                   │ └── FirstName_LastName3
+                      │ └── data.csv
+                         └── 2020-12-31
+                               ├──FirstName_LastName1
+                                     │ └── data.csv
+                                           └──FirstName_LastName5
+                                                     └── data.csv
+
+For example, on December 30, three customers made purchases, on December 31 two (folders 2020-12-30 and 2020-12-31, respectively). Because customer FirstName_LastName1 bought items on both days, there is a folder for him in a folder for each date. For other clients - one at a time.
+Note: the data in the task covers a different time period, the names are also different.
